@@ -2,9 +2,9 @@ from Infrastracture.GenericPageObjects import *
 
 
 SMS_PROVIDER_SITE = "http://receive-smss.com/"
-PHONE_NUMBER_LOCATOR = "//*[@id='content']/div[1]/div/div/div/div[1]/div[2]/div/h4"
-PHONE_NUMBER_BUTTON = "//*[@id='content']/div[1]/div/div/div/div[1]/div[3]/div/a"
-SMS_TEXT_LOCATOR_LIST = "//*[@id='content']/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]"
+PHONE_NUMBER_LOCATOR = "//*[@id='content']/div[2]/div/h4"
+PHONE_NUMBER_BUTTON = "//*[@id='content']/div[3]/div/a"
+SMS_TEXT_LOCATOR_LIST = "//*[@id='content']/div/table/tbody/tr/td[2]"
 
 
 class SmsService(GenericPO):
