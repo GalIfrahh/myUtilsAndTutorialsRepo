@@ -1,0 +1,39 @@
+
+
+1) Create a slack account: https://slack.com/
+
+- and open new channel.
+
+
+
+
+
+2) configure the Jenkins integration on slack: https://myspace.slack.com/services/new/jenkins-ci
+
+- First, install ‘Jenkins-ci’ from that link.
+- second, enter to the plugin configuration & configure:
+                                                          - "Post to channel" field with the channel you created in step 1.
+                                                          - copy the token from the "Token" field to the next steps.
+                                                          - click on save changes at the buttom of the page.
+
+
+
+
+
+3) configure jenkins:
+
+- download the Slack Notifications plugin from your jenkins configuration (plugins --> available plugins tab) - 
+  
+  you can read more aboute it on - https://wiki.jenkins.io/display/JENKINS/Slack+Plugin
+  
+- now go to your jenkins job configuration --> post-build section & it's needs to display "Slack Notification" on the dropdown.
+
+- choose the action which you want jenkins notify on ("Notify Repeated Failure Only" or        
+  
+  "Notify Back To Normal"...).
+  
+- click on advance: - enter to - "Slack compatible app URL" field the "https://$YOUR_SLACK_NAME$.slack.com/services/hooks/jenkins-ci".
+
+                    - enter to - "Integration Token" the field the token you saved from the second step.
+                    
+                    - save & run the build (:
