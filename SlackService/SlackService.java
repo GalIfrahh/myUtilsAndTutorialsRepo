@@ -1,5 +1,5 @@
 
-// please read my explanation for getting started with jenkins & slack - "jenkinsSlackIntegaration"
+// please read my explanation for getting started with jenkins & slack - "getting start with slack integaration to jenkins".
 
 
 package ProjectUtils;
