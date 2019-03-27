@@ -55,7 +55,6 @@ public class SlackService {
 		
 		try {
 			
-			Thread.sleep(10000);
 			
 			HttpResponse<JsonNode> jsonResponse = Unirest.post("https://slack.com/api/files.upload")
 
